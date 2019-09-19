@@ -1,0 +1,39 @@
+(operator
+move_above
+(params
+(<block> Object)(<from> Object)(<to> Object))
+(preconds
+(empty <to>)(position <block> <from>)(loc <from>)(loc <to>)(above <to> <from>))
+(effects
+(del empty <to>)(del position <block> <from>)(empty <from>)(position <block> <to>))
+)
+
+(operator
+move_left
+(params
+(<block> Object) (<from> Object) (<to> Object))
+(preconds
+(empty <to>)(position <block> <from>)(loc <from>)(loc <to>) (left <to> <from>))
+(effects
+(del empty <to>)(del position <block> <from>)(empty <from>)(position <block> <to>))
+)
+
+(operator
+move_right
+(params
+(<block> Object)(<from> Object)(<to> Object))
+(preconds
+(empty <to>)(position <block> <from>)(loc <from>)(loc <to>)(right <to> <from>))
+(effects
+(del empty <to>)(del position <block> <from>)(empty <from>)(position <block> <to>))
+)
+
+(operator
+move_below
+(params
+(<block> Object)(<from> Object)(<to> Object))
+(preconds
+(empty <to>)(position <block> <from>)(loc <from>)(loc <to>)(below <to> <from>))
+(effects
+(del empty <to>)(del position <block> <from>)(empty <from>)(position <block> <to>))
+)
